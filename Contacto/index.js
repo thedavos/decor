@@ -102,7 +102,6 @@ $(() => {
         const phone = $('#phone').val()
         const email = $('#email').val()
         const message = $('#message').val()
-        console.log(message);
         
 
         if (validateInfo(regex, name, lastname, phone, email, message)) {
@@ -113,6 +112,7 @@ $(() => {
                 showConfirmButton: false,
                 timer: 2000
             })
+            $('form').trigger('reset')
         } else {
             controlForm(name, lastname, email, phone, message, regex)
             swal({
