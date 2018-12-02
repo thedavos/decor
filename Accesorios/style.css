@@ -37,7 +37,8 @@
     left: 0;
     right: 0;
     text-align: center;
-    color: var(--white);
+    color: var(--last);
+    font-weight: 600;
     transform: translateY(300px);
     transition: opacity, transform .5s, .3s;
     font-size: 2em;
