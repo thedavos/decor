@@ -3,7 +3,7 @@ $(() => {
         name: /^[a-záéíóú\s]+$/i,
         phone: /^((\+51\s?)?\d\s?){9}$/,
         email: /^[\w\.-_!#$%&-]+@[a-z]+\.[a-z]{2,4}$/,
-        message: /^[\w\s]{240}$/
+        message: /^[\w\s]{0,240}$/
     }
 
     function validateName(name, regex) {

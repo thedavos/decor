@@ -103,3 +103,7 @@ body {
     font-size: 1.5em;
     color: var(--white);
 }
+
+.circle-animate {
+    height: 300px;
+}
