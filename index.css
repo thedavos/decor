@@ -1,0 +1,40 @@
+@import './utilities/reset.css';
+@import './utilities/footer.css';
+@import './utilities/header.css';
+@import './utilities/carousel.css';
+
+/* PARTE PRINCIPAL */
+
+.hero h2 {
+    text-transform: uppercase;
+    font-weight: var(--sbold-weight);
+    font-size: 1.8em;
+    color: var(--semi-black);
+}
+
+.hero .col-12 p.text-center {
+    font-size: 1.5em;
+    color: var(--last);
+}
+
+.hero h5 {
+    font-weight: var(--sbold-weight);
+}
+
+.hero .card-img-top {
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover;
+}
+
+.hero .card-text {
+    line-height: 2em;
+}
+
+.hero .card-effect {
+    transition: transform .5s;
+}
+
+.hero .card-effect:hover {
+    transform: scale(1.05)
+}

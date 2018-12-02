@@ -1,0 +1,90 @@
+@import '../utilities/reset.css';
+@import '../utilities/header.css';
+@import '../utilities/footer.css';
+@import '../utilities/carousel.css';
+
+
+.hero-title {
+    background: var(--third);
+}
+
+.portafolio{
+    width: 100%;
+    height: auto;
+}
+
+
+.portafolio-item{
+    width: 90%;
+    height: auto;
+    position: relative;
+    overflow:hidden;
+    margin-left: 4%;
+}
+
+.portafolio-img{
+    width: 100%;
+    height:270px;
+    transition: 0.9s;
+    float: left;
+}
+
+/*se mueve en base al portafolio-iten*/
+/*translateY:el titulo se traslada en su eje "y"*/
+/*100%: para que se mueva todo su altura*/
+/*transform 0.5s ease-out: que se aplique sobre transform que dure 0.5s y sea de tipo ease-out(la trancicion finalice lenta)*/
+.portafolio-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background:rgba(0,0,0,0.3);
+    color: #fff;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+}
+
+
+.portafolio-text h2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 55px;
+    color: white;
+}
+
+
+.portafolio-text p{
+    text-align: center;
+    color: white;
+	
+}
+
+@media (min-width:768px){
+    .portafolio-text h2{
+        margin-top: 100px;
+        
+    }
+
+    .portafolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portafolio-item{
+        width: 25%;
+        margin: 0;
+    }
+}
+
+/*portafolio-item:hover habra una accion sobre portafolio-text*/
+/*0%: al pasar el mouse regrese a su estado natural*/ 
+.portafolio-item:hover .portafolio-text{
+    transform: translateY(0%);
+}
+
+
+/*scale: modifica su tamaño multiplicando 1.15 por su ancho*/
+.portafolio-item:hover .portafolio-img{
+    transform: scale(1.15);
+}

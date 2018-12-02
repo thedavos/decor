@@ -1,0 +1,105 @@
+@import '../utilities/reset.css';
+@import '../utilities/header.css';
+@import '../utilities/footer.css';
+
+body {
+    position: relative;
+}
+
+.idea-video {
+    position: relative;
+}
+
+.idea-video video {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: width .5s;
+}
+
+.active {
+    width: 1000px !important;
+    position: fixed;
+    top: calc(50% - 285px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.icon {
+    display: none;
+}
+
+.icon-active {
+    display: block !important;
+	position: fixed;
+	top: 1%;
+	right: 10%;
+	z-index: 999;
+	cursor: pointer;
+	font-size: 2em;
+	color: var(--third);
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 10;
+    transition: 1s;
+}
+
+.about {
+    background: var(--third);
+}
+
+.about h2, .vision-mision h2, .team h2 {
+    font-size: 2em;
+    font-weight: var(--sbold-weight);
+    color: var(--last);
+}
+
+.about p, .vision-mision p {
+    color: var(--semi-black);
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.team img {
+    width: 300px;
+    object-fit: cover;
+    transition: transform .5s;
+    border: 1px solid var(--last);
+    padding: 2em;
+    box-sizing: content-box;
+}
+
+.team .d-flex {
+    position: relative;
+}
+
+.team img:hover {
+    transform: rotateY(180deg);
+    filter: blur(3px);
+}
+
+.team span {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    font-size: 1.5em;
+    color: var(--white);
+}

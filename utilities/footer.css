@@ -1,0 +1,15 @@
+@import '../utilities/reset.css';
+/* FOOTER */
+
+.idea-footer {
+    background: var(--primary);
+}
+
+.redes-link {
+    color: var(--last);
+    font-size: 2.5em;
+}
+
+.redes-link:hover {
+    color: var(--last);
+}

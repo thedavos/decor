@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+
+:root {
+
+    /* COLORES PRINCIPALES */
+    --primary: #bcffff;
+    --secondary: #ffede1;
+    --third: #f9fbf2;
+    --last: #afcbff;
+    --semi-black: #464646;
+    --hover: #fbd0b2;
+
+    --white: #fff;
+    --overlay: rgba(0, 0, 0, 0.5);
+
+    /* FUENTE PRINCIPAL */
+    --main-font: 'Raleway', sans-serif;
+
+    /* PESO DE LA FUENTE */
+    /*  
+        reg = regular
+        med = medium
+        sbold = semibold 
+    */
+    --reg-weight: 400; 
+    --med-weight: 500;
+    --sbold-weight: 600;
+    --bold-weight: 700;
+
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+p, figure, ul, li, a, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+input, textarea {
+	width: 100%;
+	height: 100%;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+.semi-black {
+    color: var(--semi-black);
+}

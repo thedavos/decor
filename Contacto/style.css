@@ -1,0 +1,15 @@
+@import '../utilities/reset.css';
+@import '../utilities/header.css';
+@import '../utilities/footer.css';
+
+.bg-third {
+    background: var(--third);
+}
+
+.form-names {
+    color: var(--last);
+}
+
+.location-title{
+    background: var(--third);
+}

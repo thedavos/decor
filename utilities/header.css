@@ -1,0 +1,52 @@
+@import './utilities/reset.css';
+/* HEADER */
+
+.idea-header {
+    background: var(--secondary);
+}
+
+.idea-navbar {
+    font-size: 1.5em;
+}
+
+.idea-navbar a:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+
+.idea-navbar ul {
+    height: inherit;
+}
+
+.idea-navbar ul li {
+    line-height: 123px;
+}
+
+.idea-navbar ul a {
+    color: var(--semi-black);
+    height: 100%;
+    padding: 0 1.5em;
+    font-weight: var(--med-weight);
+    letter-spacing: 2px;
+    font-size: .8em;
+}
+
+.idea-navbar ul li:hover {
+    background:var(--hover);
+    color: var(--white);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 2000;
+}
+
+.dropdown-item {
+    background:var(--secondary);
+    color: var(--white);
+}
+
+.nav-item:nth-of-type(1):hover .dropdown {
+    display: block;
+}

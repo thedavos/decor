@@ -1,0 +1,76 @@
+@import '../utilities/reset.css';
+@import '../utilities/header.css';
+@import '../utilities/footer.css';
+@import '../utilities/carousel.css';
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    background: var(--overlay);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background .5s;
+}
+
+.item-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--white);
+    transform: translateY(300px);
+    transition: opacity, transform .5s, .3s;
+    font-size: 2em;
+}
+
+.item:hover .item-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.item:hover::before {
+    background: transparent;
+}
+
+/* .item:hover .item::before {
+    background: transparent;
+} */
+
+.item img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-1 {
+    grid-row-end: span 1;
+}
+
+.level-2 {
+    grid-row-end: span 1;
+}
+
+.level-3 {
+    grid-row-end: span 1;
+}
